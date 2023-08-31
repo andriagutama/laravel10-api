@@ -41,3 +41,21 @@ name = "title" Laravel 10 REST API 01 Install Laravel 10
 name = "content" Lets install Laravel 10 first
 name = "image" Content-Type : image/png filename = "laravel10.png"
 ```
+
+#### update post
+
+```http
+POST /api/posts/:id
+
+Content-Type : multipart/form-data
+name = "title" Laravel 10 REST API 01 Install Laravel 10
+name = "content" Lets install Laravel 10 first
+name = "image" Content-Type : image/png filename = "laravel10.png"
+name = "_method" PATCH
+```
+
+#### delete a post
+
+```http
+DELETE /api/posts/:id
+```
